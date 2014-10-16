@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html> 
+	<head> 
+		<title>JQuery Plugin</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<input type='text' name='txt1' />
+		<input type='text' name='txt2' />
+		<input type='text' name='txt3' />
+		<input type='text' name='txt4' />
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/plugin.js"></script>
+		
+		<script>
+			$(function() {
+				$('input[type=text]').LengthValidator({ min: 5, max: 10, valid: 'input-valid', invalid: 'input-invalid' });
+			}); 
+		</script>
+	</body>
+</html>
